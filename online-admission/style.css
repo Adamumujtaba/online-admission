@@ -1,0 +1,1086 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    letter-spacing: 0.3px;
+    
+    
+    font-size: 60px 3em;
+    letter-spacing: 0.3px;
+    word-spacing: 3px;
+    line-height: 25px;
+    
+    
+}
+
+/*--------Navigation Bar----------*/
+
+.container nav{
+    background: #fff;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 90px;
+    box-shadow: 0px 0px 10px 0px black;
+    position: sticky;
+    z-index: 3;
+    width: 100%;
+    
+} 
+nav div{
+/*     border: 1px solid*/
+} 
+nav div img{
+    width: 30%;
+}
+nav div ul{
+    padding: 10px;
+}
+nav div ul li{
+    list-style: none;
+    display: inline;
+    margin: 0px 5px;
+}
+
+nav a {
+    text-decoration: none;
+    color: #000;
+    font-size: medium;
+    
+}
+nav a:hover{
+    
+    color: coral;
+    font-weight: bold;
+}
+nav input{
+    display: none;
+}
+nav label{
+    position: absolute;
+    right: 40px;
+    padding: 10px;
+    border: 1px solid coral;
+    color: coral;
+    font-size: 23px;
+    width: 25px;
+    text-align: center;
+    cursor: pointer;
+    display: none;
+}
+nav label:hover{
+    background: rgba(255, 127, 80, 0.22);
+    border: 1px solid rgba(255, 127, 80, 0.22);
+    transition: .3s;
+}
+
+/*-----------End Nav Bar--------------*/
+
+
+
+
+/*-----------Slider------------------*/
+.slide{
+    background: #555;
+} 
+.slide slider{
+    position: relative;
+/*    height: 500px;*/
+    height: 550px;
+    overflow: hidden;
+    display: block;
+    transition: .4s;   
+}
+slider > * {
+    position: absolute;
+    display: block;
+    width: 100%;
+    height: 100%;
+    animation: slide 12s infinite;
+    overflow: hidden;
+    color: #fff;
+}
+slider slide:nth-child(1){
+    left: 0;
+    animation-delay: -1s;
+}
+slider slide:nth-child(2){
+    animation-delay: 2s;
+}
+slider slide:nth-child(3){
+    animation-delay: 5s;
+}
+slider slide:nth-child(4){
+    left: 0;
+    animation-delay: 8s;
+}
+slide div{
+    position: absolute;
+    top: 40%;
+    left: 30px;
+    width: 500px;
+    text-transform: capitalize;
+    
+} 
+slide div button{
+    padding: 7px;
+    margin:40px 10px; 
+    width: 120px; 
+    cursor: pointer;
+     
+} 
+slide div #contact{
+    background: coral;
+    border: 1px solid coral;
+}
+slide div #contact:hover{
+    background: none;
+    border: 2px solid coral;
+    color: #fff;
+}
+slide div #our{
+    background: none;
+    border: 2px solid #fff;
+    color: #fff;
+} 
+slide div #our:hover{
+    background:#fff;
+    color: #000;
+}
+slide img{
+    width: 100%;
+    height: 100%
+}
+
+@keyframes slide{
+    0%{left: 100%; width: 100%;}
+    5%{left: 0%}
+    25%{left: 0%}
+    30%{left: -100%; width: 100%}
+    30.001%{left: -100%; width: 0%}
+    100%{left: 100%; width: 0%;}
+}
+
+/*------------End of Slide Bar-------------*/
+
+
+
+/*------------Main Container------------*/
+.container main{
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    margin-top: 40px;
+    font-family: calibri;
+}   
+
+main div{
+/*    border: 1px solid;*/
+    flex-basis: 250px;
+    line-height: 25px;
+    
+} 
+main div:nth-child(1){
+    border: 1px solid lightgrey;
+   padding: 20px; 
+} 
+
+main h3{
+    padding:10px 0px;
+}
+main p{
+    
+}
+main img{
+    width: 100%;
+}
+main img:hover{
+    transform: scale(1.1);
+    transition: 0.5s;
+}
+/*-----------End of Main----------*/
+
+
+
+
+/*-------------Info---------------*/
+.container info{
+    display: block;
+    margin-top: 100px;
+}
+info .info-1{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    
+}
+info .info-2{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+.info-2 div{
+   margin: 10px;
+    flex-basis: 240px;
+    border: 1px solid #c9c7c7;
+    padding: 25px;
+    line-height: 2em;
+    
+}
+
+.info-1 div{
+    margin: 10px;
+    flex-basis: 240px;
+    border: 1px solid #c9c7c7;
+    padding: 25px;
+    line-height: 2em;
+    height: 150px;
+} 
+info i{
+    padding: 10px;
+    color: #c9c7c7;
+}  
+.info-1 div > *  {
+    margin:10px ;
+} 
+
+
+/*-------------qoute--------------*/
+#quote{
+    text-align: center;
+    width: 100%;
+    font-family: calibri;
+} 
+.container .quote{
+    width:calc(100% - 20%);
+    margin:100px auto;
+    
+}
+
+.quote q{
+    display: block;
+    text-align: center;
+    font-size: 40px;
+}
+.quote p{
+    margin:30px auto;
+    font-size: 20px;
+    text-align: center;
+}
+.quote img{
+    margin: auto;
+    width: 300px;
+    
+}
+ 
+/*-----------End of Quote----------*/
+
+.container .section{
+    background: #232323;
+    color: #fff;
+    height: auto;
+    line-height: 26px; 
+}
+.section-1{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+} 
+.section-1 div{
+    flex-basis: 310px;
+    margin:50px 10px;
+    padding: 10px;
+
+} 
+
+.section-2{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+  
+} 
+.section-2 div{
+    flex-basis: 310px;
+    margin:50px 10px;
+    padding: 10px;
+}
+.section h3{
+    text-transform: uppercase;
+    font-weight: 100;
+}
+.section dt{
+    float: left;
+    height: 50px;
+    width: 50px;
+    text-align: center;
+    line-height: 50px;
+    background: coral;
+    border-radius: 100px;
+    font-size: 25px;
+    padding: 5px;
+} 
+.section #card{
+    background: #D5E041;
+}
+.section #userf{
+    background: #D63FDB;
+}
+.section #gcap{
+    background: #3BA2CC;
+}
+.section #home{
+    background: #B02B2C;
+}
+.section #uplus{
+    background: #7BB0E7;
+}
+.section #award{
+    background: #83A846;
+}
+
+  
+.section dd{
+    margin-left: 70px;
+}
+
+/*-----------End of Section------------*/
+
+.container .gallery{
+    margin:100px 0px;
+    text-align: center;
+}
+.gallery h1{
+    padding: 10px;
+    margin-bottom: 20px;
+}
+
+.container .gallery-1, .gallery-2{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    flex: auto;
+}
+
+.gallery .container {
+    position: relative;
+    flex-basis: 300px;
+    
+}
+.gallery .overly{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    opacity: 0;
+    transition: all .5s ease;
+}
+.gallery .container:hover .overly{
+    opacity: 1;
+}
+.gallery .text{
+    position: absolute;
+    transform: translate(-50%, -50%);
+    top: 50%;
+    left: 50%;
+    
+}
+.gallery .left{
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 0;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    color: #fff;
+}
+.gallery .container:hover .left{
+    width: 100%;
+}
+/*-----------End-------*/
+
+
+
+/*------------Teachers-----------*/
+#teachers{
+    background: lightgrey;
+}
+.container .teachers{
+    display: flex;
+    justify-content: center;
+    padding: 40px;
+} 
+.teachers div{
+    flex-basis: 300px; 
+    height: 500px;
+    margin: 10px 30px;
+    padding: 10px;
+    background: #fff;
+/*    border: 1px solid;*/
+} 
+
+.teachers img{
+/*    width: 50%;*/
+    border-radius: 100px;
+    margin: auto;
+    display: block;
+}
+.teachers h3{
+    margin: 30px;
+}
+.teachers p{
+    margin: 30px;
+}
+
+
+/*--------------Footer------------*/
+
+.container footer{
+    display: flex;
+    justify-content: space-around;
+    background: coral;
+    flex-wrap:wrap;
+    font-size: small;
+}
+
+footer div{
+    flex-basis: 300px;
+    padding: 10px;
+    margin: 20px;
+}
+ 
+/*-----------CopyRight-------------*/
+.container .copyright{
+    background: rgba(248, 107, 55, 0.99);
+    padding: 10px;
+    font-size: small;
+}
+.copyright span{
+    margin: 0px 50px;
+}
+
+
+/*-----------Form PAGE-----------*/
+.register0{
+    
+} 
+.register0 img{
+    opacity: 0.90;
+}
+.register0 h3{
+    position: absolute;
+    top: 50%;
+    text-align: center;
+    font-size: 80px;  
+    width: 100%;
+    color: coral;
+} 
+.register0 span{
+    color: royalblue;
+
+}
+
+.register{
+    display: flex;
+    justify-content: center;
+}
+
+.register div{
+    margin:40px 10px;
+/*    border: 1px solid red;*/
+    flex-basis: 600px;
+} 
+.register1{
+    padding:30px 20px;
+    border: 1px solid lightgrey;
+    box-shadow: 0px 0px 0px 1px lightgrey;
+} 
+.register1 h2{
+    text-align: center;
+    margin-bottom: 20px;
+
+} 
+.register1 ol li{
+    list-style-type:disc;
+    list-style-position: inside;
+}
+.register2{
+    
+}
+ 
+.register3{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;    
+}
+.register3 div{
+    flex-basis: 450px;
+/*    border: 1px solid red;*/
+    margin: 10px;
+}
+.register3 button{
+    width: 100%;
+    padding: 25px;
+    border: none;
+    background: royalblue;
+    color: #fff;
+    margin-top: -10px;
+} 
+.register3 a button {
+    font-family: arial;
+    font-size: 20px;
+}
+
+ 
+
+/*------------JSS-1----------------*/
+.container form{
+    display: block;
+    width: 350px;
+    margin:30px auto;
+    background: #f4f4f4;
+} 
+form table{
+    margin: auto;
+    height: 70vh;
+    border:2px solid coral;
+} 
+form  h3{
+    text-align: center;
+    background: coral;
+    color: #fff;
+    padding: 5px;
+    border: none;
+} 
+form table th{
+    text-align: left;
+    padding: 10px;
+}
+form table input[type = "text"], input[type = "tel"]{
+    width: 100%;
+    padding: 3px;
+    box-sizing: border-box;
+}
+form textarea{
+    box-sizing: border-box;
+    width: 100%;
+    height: 80px;
+}
+
+form table input[type = "submit"]{
+    width: 100%;
+    padding: 8px;
+    box-sizing: border-box;
+    cursor: pointer;
+}
+
+form table input[type = "submit"]:hover{
+    background: coral;
+    color: #fff;
+    border: 1px solid black;
+}
+
+
+
+/*-----------Admin Page Style-------------*/
+
+#admin{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    background: rgba(234, 234, 234, 0.49);
+   
+}
+
+#admin div{
+
+}
+
+#admin div form{
+    border: 2px solid coral;
+    margin: 10px;
+    
+}
+#admin form div input[type='submit']{
+    width: 90px;
+    margin: 10px;
+    padding: 4px;
+    cursor:pointer;
+    
+} 
+#admin form div input[type='submit']:hover{
+    background: coral;
+    border:1px solid black;
+    color: #fff;
+}
+
+#admin form h2{  
+    background: coral;
+    color: #fff;
+    width: 100%;
+    font-size: large;
+    
+} 
+#admin .admin div{
+    text-align: center;
+    flex-basis: 200px;
+} 
+#admin div i{
+    font-size: 80px;
+    margin: 10px;
+}
+
+ 
+
+
+
+/*-----------ADMISSION LETTER-------------*/
+.container .admission{
+    margin: 10px;
+/*    line-height:22px;*/
+    letter-spacing: normal;
+    word-spacing: normal;
+    height: 100vh;
+    font-family:candara;
+}
+.admission div{
+    width: 70%;
+    margin: auto;
+/*    border: 1px solid;*/
+} 
+.admission h1{
+    margin:30px 
+}
+.admission h5{
+    margin-bottom: 25px;
+}
+.admission p{
+    margin: 20px 0px;
+    
+} 
+.admission div:nth-child(1){
+    text-align: center;
+}
+.admission button{
+    width: 90px;
+    padding: 5px;
+    float: right;
+    margin: 4px; 
+    border: 1px solid coral;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+/*-----------ADMIN Student Record Table-------------*/
+.container .record{
+    width: 70%;
+    margin:10px auto;
+    
+}
+.record table{
+    border: 1px solid black;
+}
+.record table td{
+    border: none; 
+}
+.record table tr:nth-child(even){
+    background: #2323;
+ }
+.record button{
+    padding: 5px;
+    width:70px;
+    float: right;
+    margin:10px 5px;
+    border: 1px solid grey; 
+}
+
+
+
+
+
+
+
+
+
+/*----------------Staff PAGE---------------*/
+.container1 {
+  
+}
+.container2{
+    display: flex;
+    flex-wrap: wrap;
+    background:rgb(218, 244, 255);
+    justify-content: center;
+}
+
+.container2 .box{
+    width: 270px;
+    position: relative;
+    padding: 5px;
+    margin: 10px;
+    height: auto;
+    
+} 
+
+.container2 .box:hover img{
+    opacity: 0.7;
+
+}
+
+.container2 .box:hover{
+    
+     box-sizing: border-box;
+     box-shadow: rgb(177, 227, 248);
+     transition: 654ms;
+}
+.social{
+    text-align: center;
+    position: absolute;
+    left: 70px;
+
+}
+.box .staff ul li{
+    list-style: none;
+    display: inline-block;
+    font-size: 25px;
+    opacity: 0;
+}   
+.staff:hover img{
+    opacity: 0.87;
+}
+
+.staff:hover .social li{
+    transform: translateY(-170px);
+    transition:linear 0.5s;
+    opacity: 1;
+    
+} 
+
+.staff:hover .social li:nth-child(1){
+    transition-delay: 0.2s;
+    color: red;
+    
+}
+
+
+.staff:hover .social li:nth-child(2){
+    transition-delay: 0.3s;
+    color: blue;
+    
+}
+.staff:hover .social li:nth-child(3){
+    transition-delay: 0.4s;
+   
+   
+}
+.staff:hover .social li:nth-child(4){
+    transition-delay: 0.5s;
+  
+}
+
+.staff:hover .social li:nth-child(5){
+    transition-delay: 0.6s;
+  
+}
+
+
+
+.staff:hover .social li:nth-child(1) a {
+   color: mediumslateblue;
+    transition-delay: 0.7s;
+} 
+.staff:hover .social li:nth-child(2) a {
+   color: dodgerblue;
+    transition-delay:0.8s;
+}
+
+.staff:hover .social li:nth-child(3) a {
+    color:red;
+    transition-delay: 0.9s;
+}
+
+.staff:hover .social li:nth-child(4) a {
+    color: red;
+    transition-delay: 1s;
+}
+.staff:hover .social li:nth-child(5) a {
+    color: lawngreen;
+    transition-delay: 1.3s;
+}
+ 
+
+.container2 .info:after{
+    content: '';
+    position: absolute;
+    width: 40px;
+    height: 40px;
+    background:#fff;
+    bottom: 100px;
+    left: 120px;
+    transform: rotate(45deg);
+/*    background: red;*/
+} 
+.box .info{
+    text-align: center;
+    font-family:Calibri;
+    height: 130px;
+    width: 100%;
+    background: #fff;
+    margin:-10px 0px;   
+} 
+.info ul li{
+    list-style: none;
+    position: relative;
+    top: 40px;
+}
+
+.info li:nth-child(1){
+    font-size: large;
+    font-weight:300;
+}
+.info li:nth-child(2){
+   font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 24px;
+    letter-spacing: 2px;
+    font-weight: bolder;
+   
+}
+
+.info li:nth-child(3){
+    font-size: large;
+    font-weight:600;
+    color: royalblue;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+/*----------PHP--------*/
+#msg {
+    color: red;
+    font-size: small;
+    text-align: center;
+    display: block;
+
+}
+#msg1 {
+    color: red;
+    font-size: small;
+    text-align: center;
+    display: block;
+    
+}
+
+
+
+
+
+
+
+
+
+
+
+
+@media (max-width:1000px){
+
+    /*------------Nav Bar-----------*/
+    
+   
+    nav div{
+        
+    }
+    nav div img{
+        width: 35%;   
+    } 
+    nav div ul {
+        position: fixed;
+        width: 100%;
+        left: -110%;
+        top: 90px;
+        height: 100vh;
+        background: coral;
+        transition: .5s;
+        z-index: 9;
+    } 
+    nav div ul  a li{
+        display: block;
+        text-align: center;
+        margin: 10px 40px;
+        padding: 10px;
+    }
+    
+    nav div ul a:hover{
+        /* background: #1212; */
+        color: #fff;
+        font-weight: bold;
+    }
+    nav label{
+        display: block;
+        
+    }
+    #bars:checked  ~   div ul{
+        left: 0%;
+    }
+    
+    /*----------Nav bar END---------*/
+    
+    
+    
+    /*------------Slider------------*/
+    .slide slider{
+        height: 400px;
+    }
+    /*----------End of Slider-------*/
+    
+    
+    
+    /*------------Main-----------*/
+        
+    main div{
+        flex-basis: 200px;
+        margin: 10px;
+        
+    }
+    
+    
+    
+    
+    
+    /*-----------Info-------------*/
+    
+    .info-1 div{
+        flex-basis: 180px;
+        
+        font-size: 14px;
+    }
+     .info-2 div{
+         flex-basis: 180px;
+         font-size: 14px;
+    }
+    
+    /*-------End of Info----------*/
+    
+    
+    /*----------Section-----------*/
+    .section-1 div{
+        flex-basis: 450px;
+        margin: 15px;
+    }
+    .section-2 div{
+        flex-basis: 450px;
+        margin: 15px;
+    }
+    
+    /*--------Gallery-------------*/
+
+    
+    
+    
+    
+    /*--------Teachers------------*/
+    #teachers{
+      
+    }
+    
+    .teachers {
+        flex-wrap: wrap;
+        width: 70%;
+        margin: auto;
+    }
+    .teachers div{
+        flex-basis: 300px;
+        
+    }
+    
+    
+    
+    
+    /*----------Register---------*/
+    .register0 h3{
+        font-size: 25px;
+        top: 180px
+    } 
+    .register2{
+        display: none;
+    }
+    
+    
+    
+    
+}/*End of media*/
+
+
+
+
+@media (max-width:800px){
+    .slide slider{
+        height: 300px;
+        
+    }
+    
+    main div{
+        flex-basis: 300px;
+        margin: 10px;
+    }
+    
+    
+    
+    
+    
+    .info-1 div{
+        flex-basis: 400px;
+    }
+    .info-2{
+        margin-top: 80px;
+    }
+    .info-2 div{
+        flex-basis: 400px;
+    }
+    
+    #quote q{
+        font-size: 30px;
+    }
+    #quote p{
+        font-size: medium;
+    }
+    
+    
+    .section-1 div{
+        flex-basis: 360px;
+        margin: 10px;
+    }
+    .section-2 div{
+        flex-basis: 360px;
+        margin: 10px;
+    }
+    
+     .teachers {
+        flex-wrap: wrap;
+        
+    }
+    .teachers div{
+        padding: 10px;
+        flex-basis: 300px;
+    }
+    
+    
+    
+}
