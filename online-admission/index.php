@@ -10,12 +10,12 @@
     <div class="container">
         <nav>
             
-            <input type="checkbox" id="bars">
+            <input type="checkbox" id="bars" />
             <label for="bars" ><i class="fa fa-bars"></i></label>
             
             <div>
                 <a href="./#home">
-                <img src="images/schlog.png" width="100%">
+                <img src="images/schlog.png" width="100%" alt="logoimg" />
                 </a>
             </div>
         
